@@ -4,14 +4,10 @@
 }
 
 body {
-  align-items: center;
-  border-top: .25rem solid #c84426;
+  background-color: #f4ede9;
   font-family: var(--font-family-primary);
   line-height: 1.25;
-  color: #423b3b;
-  display: flex;
-  height: 100vh;
-  justify-content: center;
+  color: #28201e;
 }
 
 img {
@@ -23,34 +19,6 @@ p {
 }
 
 a {
+  color: #8c2b20;
   text-decoration: none;
-}
-
-.masthead {
-  padding: 2rem;
-  text-align: center;
-}
-
-.masthead-heading {
-  font-family: var(--font-family-secondary);
-  font-weight: 600;
-}
-
-.masthead-subheading {
-  color: #999;
-  font-style: italic;
-  font-weight: 400;
-}
-
-.avatar {
-  img {
-    border-radius: 50%;
-  }
-}
-
-.avatar-small {
-  img {
-    height: 128px;
-    width: 128px;
-  }
 }
