@@ -1,0 +1,15 @@
+<header class="masthead d-flex mb-2 text-h5">
+  <h1 class="masthead-title text-h4">
+    <a class="black" href="/">Advait</a>
+  </h1>
+
+  <nav class="nav">
+    <ul class="list-reset">
+      {% for nav in site.data.navigation %}
+        <li {% if nav.url == page.url %} class="text-bold"{% endif %}>
+          <a class="black" href="{{ nav.url }}">{{ nav.text }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>
