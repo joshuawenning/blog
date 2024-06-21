@@ -8,7 +8,11 @@ layout: compress
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <link href="{{ '/assets/style.css' }}" rel="stylesheet">
-    {{ content }}
+    <div class="center container-lg">
+      {% include masthead.html %}
+      {{ content }}
+      {% include footer.html %}
+    </div>
     <script src="{{ '/assets/main.js' }}"></script>
   </body>
 </html>

@@ -4,21 +4,170 @@
 }
 
 body {
-  background-color: #f4ede9;
+  background-color: var(--grey-light);
   font-family: var(--font-family-primary);
   line-height: 1.25;
-  color: #28201e;
+  color: var(--black);
 }
 
 img {
   max-width: 100%;
 }
 
-p {
-  line-height: 1.5;
+a {
+  color: var(--ruby);
+  text-decoration: underline;
+  text-decoration-color: var(--grey);
+  text-underline-offset: .25rem;
+  transition: all .2s ease-in-out;
+  
+  &:hover {
+    text-decoration-color: var(--ruby); 
+  }
 }
 
-a {
-  color: #8c2b20;
-  text-decoration: none;
+@mixin grid-lg {
+  .grid {  
+    display: flex;
+  }
+  
+  .grid-col-4 {
+    width: 40%;
+  }
+
+  .grid-col-6 {
+    width: 60%;
+  }
+}
+
+.grid-col {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.avatar-small {
+  max-width: 192px;
+}
+
+.masthead {
+  align-items: baseline;
+  border-bottom: .125rem solid var(--white);
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem;
+  
+  a {
+    text-decoration: none;
+  }
+}
+
+.nav {
+  li {
+    display: inline-block;
+    padding-left: .5rem;
+  }
+}
+
+@mixin nav-lg {
+  .nav {
+    li {
+      display: inline-block;
+      padding-left: 1rem;
+    }
+  }
+}
+
+
+.exposed-link {
+  a {
+    text-decoration: none;
+    
+    &:hover {
+      opacity: .5;
+    }
+  }
+}
+
+.exposed-link-url {
+  color: var(--grey);
+  font-family: var(--font-family-secondary);
+}
+
+.banner-sign {
+  color: var(--grey);
+  font-family: serif;
+  font-size: var(--text-h3);
+}
+
+.banner-message {
+  font-size: var(--text-h2);
+  font-weight: 400;
+  line-height: 1;
+}
+
+.social-link {
+  display: flex;
+  flex-wrap: wrap;
+  width: 14rem;
+  
+  li {
+    width: 50%;
+    
+    &:nth-child(-n+2) {
+      margin-bottom: .5rem;
+    }
+    
+    a {
+      &:hover {
+        opacity: .5; 
+      }
+    }
+  }
+}
+
+.social-link-icon {
+  fill: var(--grey);
+  height: 1em;
+  margin-right: .25rem;
+  width: 1em;
+}
+
+.post {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  
+  img {
+    border-radius: .5em;
+  }
+  
+  p {
+    &:not(:first-child) {
+      text-indent: 1rem; 
+    }
+  }
+}
+
+.post-body {
+  blockquote,
+  figure,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ol,
+  ul {
+    font-weight: normal;
+    margin-bottom: 1rem;
+  }
+}
+
+.footer {
+  border-top: .125rem solid var(--white);
+  padding: 1rem;
 }
