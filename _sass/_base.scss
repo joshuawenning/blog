@@ -171,3 +171,24 @@ a {
   border-top: .125rem solid var(--white);
   padding: 1rem;
 }
+
+.google-calendar{
+  height: 0;
+  padding-bottom: 100%;
+  position: relative;
+  width: 100%;
+  
+  iframe {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .google-calendar{
+    padding-bottom: 50%;
+  }
+}
