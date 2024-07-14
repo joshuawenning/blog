@@ -14,7 +14,7 @@ There is not one thing that contains happiness. Knowing this, happily watch the 
 
 Buds blossoming on the branch, like our minds, continually change. Giving up seeking stability in anything which changes is Shama. Dama is the ability to watch the scenery of sensations.
 
-The sun has no preference on how it dances through the shade; it simply shines. Similarly, one who's personality and work is no longer fueled by their wounds is practicing Uparama. The willingness to gain an understanding around these wounds is Titiksha.
+The sun has no preference on how it dances through the shade; it simply shines. Similarly, one who’s personality and work is no longer fueled by their wounds is practicing Uparama. The willingness to gain an understanding around these wounds is Titiksha.
 
 Deer take shelter by the pine trees, which are pure and consistent throughout the season. Take shelter in the Guru and Vedanta by faithfully trusting their words. They are the crystallization of Truth—purity and consistency itself. This is known as Shraddha.
 
