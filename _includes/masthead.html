@@ -5,8 +5,9 @@
 
   <nav class="nav">
     <ul class="list-reset">
+      {% assign url = page.url | remove: ".html" %}
       {% for nav in site.data.navigation %}
-        <li {% if nav.url == page.url %} class="text-bold"{% endif %}>
+      <li {% if nav.url == url %} class="text-bold"{% endif %}>
           <a class="black" href="{{ nav.url }}">{{ nav.text }}</a>
         </li>
       {% endfor %}
