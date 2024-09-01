@@ -20,17 +20,17 @@ a {
   text-decoration-color: var(--grey);
   text-underline-offset: .25rem;
   transition: all .2s ease-in-out;
-  
+
   &:hover {
-    text-decoration-color: var(--ruby); 
+    text-decoration-color: var(--ruby);
   }
 }
 
 @mixin grid-lg {
-  .grid {  
+  .grid {
     display: flex;
   }
-  
+
   .grid-col-4 {
     width: 40%;
   }
@@ -59,7 +59,7 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 1rem;
-  
+
   a {
     text-decoration: none;
   }
@@ -85,7 +85,7 @@ a {
 .exposed-link {
   a {
     text-decoration: none;
-    
+
     &:hover {
       opacity: .5;
     }
@@ -113,17 +113,17 @@ a {
   display: flex;
   flex-wrap: wrap;
   width: 14rem;
-  
+
   li {
     width: 50%;
-    
+
     &:nth-child(-n+2) {
       margin-bottom: .5rem;
     }
-    
+
     a {
       &:hover {
-        opacity: .5; 
+        opacity: .5;
       }
     }
   }
@@ -139,19 +139,20 @@ a {
 .post {
   padding-left: 1rem;
   padding-right: 1rem;
-  
+
   img {
     border-radius: .5em;
   }
-  
+
   p {
     &:not(:first-child) {
-      text-indent: 1rem; 
+      text-indent: 1rem;
     }
   }
 }
 
-.post-body {
+.post-body,
+.text-body {
   blockquote,
   figure,
   h2,
@@ -167,6 +168,13 @@ a {
   }
 }
 
+// Sanskrit
+
+.text-body span {
+  font-family: var(--font-family-sanskrit);
+  font-size: var(--text-h5);
+}
+
 .footer {
   border-top: .125rem solid var(--white);
   padding: 1rem;
@@ -177,7 +185,7 @@ a {
   padding-bottom: 100%;
   position: relative;
   width: 100%;
-  
+
   iframe {
     border-width: 0;
     height: 100%;
