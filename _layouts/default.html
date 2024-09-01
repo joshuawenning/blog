@@ -7,7 +7,7 @@ layout: compress
   <title>{{ site.title }} &middot; {{ page.title }}</title>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <link href="{{ '/assets/style.css' }}" rel="stylesheet">
+  <link href="/assets/style.css?{{ site.time | date: '%s' }}" rel="stylesheet">
     <div class="center container-lg">
       {% include masthead.html %}
       {{ content }}
