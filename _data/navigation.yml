@@ -1,8 +1,8 @@
 - text: Home
   url: /
 
-- text: Programs
-  url: /programs
+- text: About
+  url: /about
 
 - text: Scripture
   url: /scripture

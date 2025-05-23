@@ -4,10 +4,12 @@
 }
 
 body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
   background-color: var(--grey-light);
+  color: var(--black);
   font-family: var(--font-family-primary);
   line-height: 1.25;
-  color: var(--black);
 }
 
 img {
@@ -18,8 +20,9 @@ a {
   color: var(--ruby);
   text-decoration: underline;
   text-decoration-color: var(--grey);
+  text-decoration-style: dotted;
   text-underline-offset: .25rem;
-  transition: all .2s ease-in-out;
+  transition: all .25s ease-in-out;
 
   &:hover {
     text-decoration-color: var(--ruby);
@@ -98,7 +101,8 @@ a {
 }
 
 .banner-message {
-  font-size: var(--text-h2);
+  font-size: var(--text-h1);
+  font-style: italic;
   font-weight: 400;
   line-height: 1;
 }
@@ -139,6 +143,10 @@ a {
   }
 
   p {
+    font-size: 1.25rem;
+  }
+
+  p {
     &:not(:first-child) {
       text-indent: 1rem;
     }
@@ -172,26 +180,4 @@ a {
 .footer {
   border-top: .125rem solid var(--white);
   padding: 1rem;
-}
-
-.google-calendar{
-  height: 0;
-  padding-bottom: 100%;
-  position: relative;
-  width: 100%;
-
-  iframe {
-    border-width: 0;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-  }
-}
-
-@media (min-width: 768px) {
-  .google-calendar{
-    padding-bottom: 50%;
-  }
 }
