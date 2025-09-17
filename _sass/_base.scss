@@ -109,15 +109,11 @@ a {
 
 .social-link {
   display: flex;
-  flex-wrap: wrap;
   width: 12rem;
 
   li {
+    margin-right: 1.25rem;
     width: 50%;
-
-    &:nth-child(-n+2) {
-      margin-bottom: .5rem;
-    }
 
     a {
       &:hover {
@@ -170,7 +166,9 @@ a {
   }
 }
 
+//
 // Sanskrit
+//
 
 .text-body span {
   font-size: var(--text-h5);
@@ -179,4 +177,48 @@ a {
 .footer {
   border-top: .125rem solid var(--white);
   padding: 1rem;
+
+  p {
+    margin-bottom: .5rem;
+  }
+}
+
+@media (min-width: 540px) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+//
+// Book Collection
+//
+
+.book-collection {
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  li {
+    flex-grow: 1;
+    margin-bottom: 1rem;
+    width: calc(50% - 1.25rem);
+
+    &:nth-child(odd) {
+      margin-right: 1.25rem;
+    }
+  }
+}
+
+@media (min-width: 540px) {
+  .book-collection {
+
+    li {
+      margin-right: 1.25rem;
+      width: calc(25% - 1.25rem);
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
 }
