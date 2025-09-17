@@ -1,23 +1,23 @@
 - title: Mere Christianity
   author: C. S. Lewis
   img: /assets/images/library/mere-christianity.jpg
-  status: false
+  read: false
   url: https://www.google.com/books/edition/Mere_Christianity/vD2XzwEACAAJ
 
 - title: 'PHP & MySQL: Server-side Web Development'
   author: Jon Duckett
   img: /assets/images/library/php-my-sql.jpg
-  status: true
+  read: false
   url: https://www.google.com/books/edition/PHP_MySQL/R52auQEACAAJ
 
 - title: The Power of Language
   author: Viorica Marian
   img: /assets/images/library/the-power-of-language.jpg
-  status: true
+  read: true
   url: https://www.google.com/books/edition/The_Power_of_Language/BnF5EAAAQBAJ
 
 - title: Finding Flow
   author: Mihaly Csikszentmihalhi
   img: /assets/images/library/finding-flow.jpg
-  status: true
+  read: true
   url: https://www.google.com/books/edition/Finding_Flow/SPqvDwAAQBAJ

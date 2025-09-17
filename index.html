@@ -84,13 +84,22 @@ title: Home
     <h3 class="text-h2">
       <a class="black" href="#">Library</a>
     </h3>
-    <p class="mb-1 measure-sm text-h3">A growing collection of books that I&rsquo;ve read and love, or am inspired to read</p>
+    <p class="mb-1 measure-sm text-h3">A growing collection of books that I&rsquo;ve read and love, or am currently reading</p>
 
     <div>
       <ul class="book-collection list-reset d-flex">
         {% for book in site.data.library %}
-          <li class="exposed-link">
+          <li class="exposed-link relative">
             <a class="black text-bold text-plain" href="{{ book.url }}">
+
+              <div class="read-badge br-1 font-secondary grey text-h6 text-normal">
+                {% if book.read %}
+                  <span style="color: #afe1af;">&bull;</span> Read
+                {% else %}
+                  <span style="color: #e4D00a;">&bull;</span> Reading
+                {% endif %}
+              </div>
+
               <img alt="{{ book.title }}" class="br-1" src="{{ book.img }}">
 
               <h4 class="text-h4">{{ book.title }}</h4>
