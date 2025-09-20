@@ -3,11 +3,10 @@
 
 @import "variables";
 @import "base";
+@import "syntax";
 @import "utilities";
 
 // Components
 
 // Component breakpoint includes
-//
-// https://open-source-life.com/2020/12/05/nifty-jekyll-tips-for-managing-assets.html
 @import "breakpoints";
