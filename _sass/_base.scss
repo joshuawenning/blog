@@ -134,10 +134,15 @@ a {
   padding-left: 1rem;
   padding-right: 1rem;
 
+  code {
+    font-size: var(--text-h6);
+  }
+
   img {
     border-radius: .5em;
   }
 
+  ol,
   p {
     font-size: 1.25rem;
   }
@@ -152,6 +157,7 @@ a {
 .post-body,
 .text-body {
   blockquote,
+  div,
   figure,
   h2,
   h3,
@@ -161,17 +167,14 @@ a {
   p,
   ol,
   ul {
-    font-weight: normal;
     margin-bottom: 1rem;
   }
 }
 
-//
-// Sanskrit
-//
-
-.text-body span {
-  font-size: var(--text-h5);
+.highlight {
+  border-radius: .25rem;
+  padding: .5rem;
+  overflow-x: scroll;
 }
 
 .footer {
