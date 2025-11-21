@@ -1,8 +1,11 @@
 - text: Home
   url: /
 
+- text: Blog
+  url: /blog
+
 - text: About
   url: /about
 
-- text: Résumé
-  url: https://www.dropbox.com/scl/fi/3shy2qnfxv0x2oj0ugdm5/R-sum.pdf?rlkey=sawr4kvmnmfwzgd7bfgjfzlv2&st=b4ov2k1x&dl=0
+- text: Work
+  url: /work

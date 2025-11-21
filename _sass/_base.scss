@@ -84,6 +84,18 @@ a {
   }
 }
 
+.nav-link {
+  a {
+    color: var(--gray);
+  }
+
+  &.is-active {
+    a {
+      color: var(--black);
+      font-weight: bold;
+    }
+  }
+}
 
 .exposed-link {
   a {
