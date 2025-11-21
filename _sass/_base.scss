@@ -86,7 +86,11 @@ a {
 
 .nav-link {
   a {
-    color: var(--gray);
+    color: var(--grey);
+
+    &:hover {
+      color: var(--black);
+    }
   }
 
   &.is-active {
@@ -140,6 +144,16 @@ a {
   height: 1em;
   margin-right: .25rem;
   width: 1em;
+}
+
+.about {
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .about {
+    margin-bottom: 0;
+  }
 }
 
 .post {
@@ -246,4 +260,11 @@ a {
   position: absolute;
   right: -.5rem;
   top: -.5rem;
+}
+
+.arrow {
+  height: 24px;
+  margin-left: .5rem;
+  vertical-align: middle;
+  width: 24px;
 }

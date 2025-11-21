@@ -4,7 +4,7 @@ title: Home
 ---
 
 <div class="grid mb-2">
-  <section class="grid-col grid-col-4 mb-2">
+  <section class="grid-col grid-col-4 about">
     <div class="banner mb-1">
       <p class="grey text-h4">Designer</p>
       <h2 class="banner-message">May there be goodness for all.</h2>
@@ -13,7 +13,7 @@ title: Home
     <div class="mb-1">
       <img alt="Profile" class="avatar avatar-small mb-1"
         src="https://gravatar.com/avatar/dc98c5cfbe62b1c89079d540d9c2714e78c80e6cbd83b2fe32e739849c76ef0b?size=256" />
-      <p class="lh-copy text-h5">My name is Joshua Wenning and I&rsquo;m a designer with a passion for uncovering what
+      <p class="lh-copy text-h5">My name is Joshua and I&rsquo;m a designer with a passion for uncovering what
         matters most to people and bringing it to life through both digital and print. I thrive at the intersection of
         design and engineering—moving fluidly from the visionary process of how something should look and feel to the
         technical discipline required to build it. I run an independent studio called <a class="black"
@@ -54,7 +54,10 @@ title: Home
   </section>
 
   <section class="grid-col grid-col-6">
-    <h2 class="text-h2 mb-1">Featured Work</h2>
+    <h2 class="text-h2">
+      <a class="black" href="/work">Work{% include arrow.html %}</a>
+    </h2>
+    <p class="text-h4 mb-1 text-italic">Current inspiring projects</p>
 
     <div class="exposed-link mb-1">
       <a href="https://firstpulsestudio.com/">
@@ -75,7 +78,10 @@ title: Home
     </div>
 
     <div>
-      <h2 class="text-h2 mb-1">Writing</h2>
+      <h2 class="text-h2">
+        <a class="black" href="/blog">Blog{% include arrow.html %}</a>
+      </h2>
+      <p class="text-h4 mb-1 text-italic">Thoughts, design explorations, and technical write-ups</p>
 
       <ul class="list-reset">
         {% for post in site.posts %}
@@ -92,9 +98,9 @@ title: Home
 <div class="grid mb-2">
   <section class="grid-col">
     <h3 class="text-h2">
-      <a class="black" href="#">Library</a>
+      <a class="black" href="/playlist">Library{% include arrow.html %}</a>
     </h3>
-    <p class="mb-1 measure-sm text-h3">A growing collection of books that I&rsquo;ve read and love, or am currently
+    <p class="text-h4 mb-1 text-italic">A growing collection of books that I&rsquo;ve read and love, or am currently
       reading</p>
 
     <div>
