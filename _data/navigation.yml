@@ -1,5 +1,5 @@
-- text: Home
-  url: /
+- text: Work
+  url: /work
 
 - text: Blog
   url: /blog
@@ -7,5 +7,5 @@
 - text: About
   url: /about
 
-- text: Work
-  url: /work
+- text: Library
+  url: /library
