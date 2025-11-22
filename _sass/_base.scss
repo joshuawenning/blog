@@ -268,3 +268,16 @@ a {
   vertical-align: middle;
   width: 24px;
 }
+
+.case-group {
+  margin-left: -.5rem;
+  margin-right: -.5rem;
+}
+
+.case {
+  padding: .5rem;
+
+  img {
+    border: 1px solid var(--grey);
+  }
+}
