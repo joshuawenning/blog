@@ -16,6 +16,14 @@ img {
   max-width: 100%;
 }
 
+hr {
+  background-color: var(--white);
+  border: 0;
+  height: .125rem;
+  margin: 2rem auto;
+  width: 100px;
+}
+
 a {
   color: var(--ruby);
   text-decoration: underline;
@@ -26,6 +34,16 @@ a {
 
   &:hover {
     text-decoration-color: var(--ruby);
+  }
+}
+
+.list {
+  list-style-type: "—";
+  padding-left: 1rem;
+
+  li {
+    margin-bottom: .25rem;
+    padding-inline-start: 1rem;
   }
 }
 
