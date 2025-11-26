@@ -96,7 +96,7 @@ title: Home
       <p class="text-h4 mb-1 text-italic">Thoughts, design explorations, and technical write-ups</p>
 
       <ul class="list-reset">
-        {% for post in site.posts %}
+        {% for post in site.posts limit:3 %}
         <li class="lh-solid mb-1 text-h4">
           <a class="text-bold" href="{{ post.url }}">{{ post.title }}</a><br>
           <time class="grey text-h6 text-tracked text-uppercase">{{ post.date | date: "%B %d, %Y" }}</time>
@@ -140,7 +140,7 @@ title: Home
 
     <div>
       <ul class="book-collection list-reset d-flex">
-        {% for book in site.data.library %}
+        {% for book in site.data.library limit:4 %}
         <li class="exposed-link relative">
           <a class="black text-bold text-plain" href="{{ book.url }}">
 
