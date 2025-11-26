@@ -11,8 +11,7 @@ title: Home
     </div>
 
     <div class="mb-1">
-      <img alt="Profile" class="avatar avatar-small mb-1"
-        src="assets/images/profile.jpg" />
+      <img alt="Profile" class="avatar avatar-small d-block mb-1" src="assets/images/profile.jpg" />
       <p class="lh-copy text-h5">My name is Joshua and I&rsquo;m a designer with a passion for uncovering what
         matters most to people and bringing it to life through both digital and print. I thrive at the intersection of
         design and engineering—moving fluidly from the visionary process of how something should look and feel to the
@@ -128,6 +127,25 @@ title: Home
   </section>
 </div>
 {% endcomment %}
+
+<div class="grid mb-2">
+  <section class="grid-col">
+    <h3 class="text-h2">
+      <a class="black" href="/library">Photography{% include arrow.html %}</a>
+    </h3>
+    <p class="grey mb-1 text-h4 text-italic">Latest clicks of the everyday sacred</p>
+
+    {% assign photos = site.static_files | where_exp: "file", "file.path contains '/assets/images/photos/'" %}
+
+    <div class="d-flex gallery">
+      {% for photo in photos limit:3 %}
+      <div class="gallery-img">
+        <img alt="" class="d-block br-1" src="{{ photo.path | relative_url }}">
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+</div>
 
 <div class="grid mb-2">
   <section class="grid-col">

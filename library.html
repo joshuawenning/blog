@@ -28,4 +28,18 @@ title: Library
     </li>
     {% endfor %}
   </ul>
+
+  <hr>
+
+  <h2 class="text-h2">Photography</h1>
+  <h3 class="mb-1 grey text-h4 text-italic text-normal">Latest clicks of the everyday sacred</h3>
+  {% assign photos = site.static_files | where_exp: "file", "file.path contains '/assets/images/photos/'" %}
+
+  <div class="d-flex gallery">
+    {% for photo in photos %}
+    <div class="gallery-img">
+      <img alt="" class="d-block br-1" src="{{ photo.path | relative_url }}">
+    </div>
+    {% endfor %}
+  </div>
 </section>
