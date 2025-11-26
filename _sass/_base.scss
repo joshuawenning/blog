@@ -12,6 +12,10 @@ body {
   line-height: 1.25;
 }
 
+body.js-no-scroll {
+  overflow: hidden;
+}
+
 img {
   max-width: 100%;
 }
@@ -302,11 +306,56 @@ a {
 
 .gallery {
   flex-wrap: wrap;
-  margin-left: -.5rem;
-  margin-right: -.5rem;
+  margin: -.5rem;
 }
 
 .gallery-img {
+  cursor: pointer;
   flex-basis: calc(100% / 3 - 1rem);
   margin: .5rem;
+}
+
+//
+// Lightbox
+//
+
+.lightbox {
+  align-items: center;
+  backdrop-filter: blur(1rem);
+  background: rgba(0,0,0,.5);
+  display: none;
+  inset: 0;
+  justify-content: center;
+  position: fixed;
+  z-index: 9999;
+}
+
+.lightbox-icon {
+  cursor: pointer;
+  position: fixed;
+  right: 1rem;
+  top: 1rem;
+
+  svg {
+    fill: var(--white);
+  }
+}
+
+@media (min-width: 540px) {
+  .lightbox-icon {
+    right: 2rem;
+    top: 2rem;
+  }
+}
+
+// Full-size image
+.lightbox-img {
+  animation: fadeIn .125s;
+  max-height: 90vh;
+  max-width: 90vw;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(.95); }
+  to   { opacity: 1; transform: scale(1); }
 }
