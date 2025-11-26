@@ -1,0 +1,31 @@
+---
+layout: default
+title: Library
+---
+
+<section class="mb-2 pl-1 pr-1">
+  <h1 class="text-h2">Library</h1>
+  <h2 class="mb-2 grey text-h4 text-italic text-normal">Growing collection of books that I&rsquo;ve read and love, or am currently reading</h2>
+
+  <ul class="book-collection list-reset d-flex">
+    {% for book in site.data.library limit:4 %}
+    <li class="exposed-link relative">
+      <a class="black text-bold text-plain" href="{{ book.url }}">
+
+        <div class="read-badge br-1 font-secondary grey text-h6 text-normal">
+          {% if book.read %}
+          <span style="color: #afe1af;">&bull;</span> Read
+          {% else %}
+          <span style="color: #e4D00a;">&bull;</span> Reading
+          {% endif %}
+        </div>
+
+        <img alt="{{ book.title }}" class="br-1" src="{{ book.img }}">
+
+        <h4 class="text-h4">{{ book.title }}</h4>
+        <h4 class="grey text-h5 text-normal">{{ book.author }}</h4>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
