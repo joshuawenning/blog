@@ -299,3 +299,14 @@ a {
     border: 1px solid var(--grey);
   }
 }
+
+.gallery {
+  flex-wrap: wrap;
+  margin-left: -.5rem;
+  margin-right: -.5rem;
+}
+
+.gallery-img {
+  flex-basis: calc(100% / 3 - 1rem);
+  margin: .5rem;
+}
