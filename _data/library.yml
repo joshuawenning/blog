@@ -1,14 +1,20 @@
+- title: The Body Keeps the Score
+  author: Bessel A. Van der Kolk
+  img: /assets/images/library/the-body-keeps-the-score.jpg
+  read: false
+  url: https://www.google.com/books/edition/The_Body_Keeps_the_Score/T7iJDQAAQBAJ
+
+- title: Principles of Logo Design
+  author: George Bokhua
+  img: /assets/images/library/principles-of-logo-design.jpg
+  read: false
+  url: https://www.google.com/books/edition/Principles_of_Logo_Design/iv18EAAAQBAJ
+
 - title: Mere Christianity
   author: C. S. Lewis
   img: /assets/images/library/mere-christianity.jpg
-  read: false
+  read: true
   url: https://www.google.com/books/edition/Mere_Christianity/vD2XzwEACAAJ
-
-- title: 'PHP & MySQL: Server-side Web Development'
-  author: Jon Duckett
-  img: /assets/images/library/php-my-sql.jpg
-  read: false
-  url: https://www.google.com/books/edition/PHP_MySQL/R52auQEACAAJ
 
 - title: The Power of Language
   author: Viorica Marian
