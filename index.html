@@ -6,12 +6,12 @@ title: Home
 <div class="grid mb-2">
   <section class="grid-col grid-col-4 about">
     <div class="banner mb-1">
-      <p class="grey text-h4">Designer and aspiring Ruby developer</p>
       <h2 class="banner-message">May there be goodness for all.</h2>
     </div>
 
     <div class="mb-1">
       <img alt="Profile" class="avatar avatar-small d-block mb-1" src="assets/images/profile.jpg" />
+      <p class="grey lh-solid mb-1 text-h4 text-italic">Designer and aspiring Ruby developer</p>
       <p class="lh-copy text-h5">My name is Joshua and I&rsquo;m a designer with a passion for uncovering what
         matters most to people and bringing it to life through both digital and print. I thrive at the intersection of
         design and engineering—moving fluidly from the visionary process of how something should look and feel to the
@@ -53,7 +53,7 @@ title: Home
   </section>
 
   <section class="grid-col grid-col-6">
-    <h2 class="text-h2">Work</h2>
+    <h2 class="lh-solid text-h2">Work</h2>
     <p class="grey mb-1 text-h4 text-italic">Currently building</p>
 
     <div class="exposed-link mb-1">
@@ -83,7 +83,7 @@ title: Home
       <p class="grey mb-1 text-h4 text-italic">Thoughts, design explorations, and technical write-ups</p>
 
       <ul class="list-reset">
-        {% for post in site.posts limit:3 %}
+        {% for post in site.posts limit:4 %}
         <li class="lh-solid mb-1 text-h4">
           <a class="text-bold" href="{{ post.url }}">{{ post.title }}</a><br>
           <time class="grey text-h6 text-tracked text-uppercase">{{ post.date | date: "%B %d, %Y" }}</time>
