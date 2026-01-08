@@ -28,6 +28,12 @@ hr {
   width: 100px;
 }
 
+blockquote {
+  border-left: .125rem solid var(--grey);
+  font-style: italic;
+  padding-left: 1rem;
+}
+
 a {
   color: var(--ruby);
   text-decoration: underline;
@@ -193,6 +199,10 @@ a {
   ol,
   p {
     font-size: 1.25rem;
+  }
+
+  blockquote p {
+    font-size: var(--text-h4);
   }
 
   p {
