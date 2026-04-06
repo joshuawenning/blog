@@ -5,7 +5,7 @@ title: Library
 
 <section class="mb-2 pl-1 pr-1">
   <h1 class="text-h2">Library</h1>
-  <h2 class="mb-2 grey text-h4 text-italic text-normal">Growing collection of books that I&rsquo;ve read and love, or am currently reading</h2>
+  <h2 class="mb-2 grey text-h4 text-italic text-normal">Growing Collection of Inspiring Reads</h2>
 
   <ul class="book-collection list-reset d-flex">
     {% for book in site.data.library limit:4 %}
@@ -32,7 +32,7 @@ title: Library
   <hr>
 
   <h2 class="text-h2">Photography</h1>
-  <h3 class="mb-1 grey text-h4 text-italic text-normal">Latest clicks of the everyday sacred</h3>
+  <h3 class="mb-1 grey text-h4 text-italic text-normal">Latest Clicks of the Everyday Sacred</h3>
   {% assign photos = site.static_files | where_exp: "file", "file.path contains '/assets/images/photos/'" %}
 
   <div class="d-flex gallery">
