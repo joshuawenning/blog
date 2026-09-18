@@ -88,9 +88,8 @@
 .text-italic    { font-style: italic; }
 .text-uppercase { text-transform: uppercase; }
 
-.text-plain {
-  text-decoration: none;
-}
+.text-plain  { text-decoration: none; }
+.text-pretty { text-wrap: pretty; }
 
 .text-tracked {
   letter-spacing: .25em;

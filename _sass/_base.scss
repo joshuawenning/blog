@@ -17,6 +17,7 @@ body.js-no-scroll {
 }
 
 img {
+  display: block;
   max-width: 100%;
 }
 
@@ -54,6 +55,10 @@ a {
   li {
     margin-bottom: .25rem;
     padding-inline-start: 1rem;
+
+    &::marker {
+      color: var(--grey);
+    }
   }
 }
 
@@ -303,15 +308,24 @@ a {
 }
 
 .case-group {
+  flex-wrap: wrap;
   margin-left: -.5rem;
   margin-right: -.5rem;
 }
 
 .case {
   padding: .5rem;
+  width: 50%;
 
   img {
     border: 1px solid var(--grey);
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .case {
+    width: calc(100% * 1/3);
   }
 }
 
@@ -324,6 +338,12 @@ a {
   cursor: pointer;
   flex-basis: calc(100% / 3 - 1rem);
   margin: .5rem;
+}
+
+@media (min-width: 540px) {
+  .columns {
+    column-count: 2
+  }
 }
 
 //
