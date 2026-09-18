@@ -106,3 +106,7 @@
     column-count: 2
   }
 }
+
+@media (min-width: 768px) {
+  .md-mb-1 { margin-bottom: 1rem; }
+}
