@@ -307,6 +307,10 @@ a {
   width: 24px;
 }
 
+//
+// Case
+//
+
 .case-group {
   flex-wrap: wrap;
   margin-left: -.5rem;
@@ -329,6 +333,10 @@ a {
   }
 }
 
+//
+// Gallery
+//
+
 .gallery {
   flex-wrap: wrap;
   margin: -.5rem;
@@ -338,12 +346,6 @@ a {
   cursor: pointer;
   flex-basis: calc(100% / 3 - 1rem);
   margin: .5rem;
-}
-
-@media (min-width: 540px) {
-  .columns {
-    column-count: 2
-  }
 }
 
 //

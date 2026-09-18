@@ -100,3 +100,9 @@
 .lh-solid   { line-height: 1; }
 .measure    { max-width: 32em; }
 .measure-sm { max-width: 24em; }
+
+@media (min-width: 540px) {
+  .columns {
+    column-count: 2
+  }
+}
