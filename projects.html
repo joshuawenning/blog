@@ -1,0 +1,19 @@
+---
+layout: default
+title: Projects
+---
+
+<section class="mb-2 pl-1 pr-1">
+  <h1 class="text-h2">Projects</h1>
+  <h2 class="mb-1 grey text-h4 text-italic text-normal">Highlights of Recent Client Work</h2>
+
+  <div class="d-flex case-group">
+    {% for project in site.data.projects %}
+    <div class="case">
+      <img alt="{{ project.client }}" src="{{ project.img | relative_url }}">
+      <h3 class="text-h5" style="margin-top: .5rem;">{{ project.client }}</h3>
+      <p class="font-secondary grey text-h6">{{ project.date }} &middot; {{ project.type }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</section>
