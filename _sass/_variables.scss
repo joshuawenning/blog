@@ -1,6 +1,38 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Ioskeley Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/IoskeleyMono-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Ioskeley Mono';
+  font-style: italic;
+  font-weight: 400;
+  src: url('/assets/fonts/IoskeleyMono-Italic.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Ioskeley Mono';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/assets/fonts/IoskeleyMono-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Ioskeley Mono';
+  font-style: italic;
+  font-weight: 700;
+  src: url('/assets/fonts/IoskeleyMono-BoldItalic.woff2') format('woff2');
+}
+
 :root {
   --font-family-primary: 'Crimson Text', serif;
-  --font-family-secondary: menlo, monaco, consolas, 'liberation mono', 'courier new', monospace;
+  --font-family-secondary: 'Ioskeley Mono', monospace;
 
   // Type Scale
 
