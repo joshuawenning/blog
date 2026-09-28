@@ -292,7 +292,7 @@ a {
 }
 
 .read-badge {
-  background-color: rgba(255, 255, 255, .95);
+  background-color: var(--badge-bg);
   border: 1px solid var(--grey-light);
   padding: .125rem .25rem;
   position: absolute;
@@ -370,7 +370,7 @@ a {
   top: 1rem;
 
   svg {
-    fill: var(--white);
+    fill: #fff;
   }
 }
 

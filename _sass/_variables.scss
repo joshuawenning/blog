@@ -31,6 +31,7 @@
 }
 
 :root {
+  color-scheme: light;
   --font-family-primary: 'Crimson Text', serif;
   --font-family-secondary: 'Ioskeley Mono', monospace;
 
@@ -50,4 +51,5 @@
   --grey-light: #f0f0f0;
   --ruby: #990000;
   --white: #fff;
+  --badge-bg: rgba(255, 255, 255, .95);
 }

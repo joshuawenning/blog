@@ -1,0 +1,26 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --black: #eee5df;
+    --grey: #b5aaa5;
+    --grey-light: #1c1918;
+    --ruby: #f1a29c;
+    --white: #463d39;
+    --badge-bg: rgba(35, 30, 28, .95);
+
+    .highlight {
+      background: #292321;
+      color: #eee5df;
+
+      .c, .cm, .cp, .c1, .cs, .gh, .go, .gu, .bp, .w { color: #b5aaa5; }
+      .err, .gr, .gt, .ne, .nf { color: #ff9e98; }
+      .gd, .gd .x { background-color: #51302e; color: #ffe1dd; }
+      .gi, .gi .x { background-color: #294037; color: #d7f2dc; }
+      .gp, .nn { color: #c8bcb5; }
+      .kt, .nc, .ni, .nt { color: #b9bfff; }
+      .m, .mf, .mh, .mi, .mo, .il, .na, .no, .nv, .vc, .vg, .vi { color: #8ddbd4; }
+      .s, .sb, .sc, .sd, .s2, .se, .sh, .si, .sx, .s1, .ss { color: #f2b2ae; }
+      .nb, .sr { color: #a8deaa; }
+    }
+  }
+}

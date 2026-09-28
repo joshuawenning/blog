@@ -2,6 +2,8 @@ document.addEventListener('DOMContentLoaded', function () {
   const lightbox = document.getElementById('lightbox')
   const lightboxImg = document.getElementById('lightbox-img')
 
+  if (!lightbox || !lightboxImg) return
+
   function openLightbox (src) {
     lightboxImg.src = src
     lightbox.style.display = 'flex'
