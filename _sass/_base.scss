@@ -275,6 +275,10 @@ a {
       margin-right: 1.25rem;
     }
   }
+
+  .exposed-link a:hover {
+    opacity: 1;
+  }
 }
 
 @media (min-width: 540px) {
@@ -291,6 +295,72 @@ a {
   }
 }
 
+.book-cover {
+  margin-bottom: .25rem;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+
+  &::after {
+    background: rgba(255, 255, 255, .5);
+    border-radius: inherit;
+    content: "";
+    inset: 0;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    transition: opacity .25s ease-in-out;
+  }
+}
+
+.book-cta {
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 .25rem .75rem rgba(40, 32, 30, .175);
+  color: #28201e;
+  display: inline-flex;
+  gap: .375rem;
+  left: 50%;
+  opacity: 0;
+  padding: .5rem .75rem;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -40%);
+  transition: opacity .25s ease-in-out, transform .25s ease-in-out;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.book-cta-icon {
+  flex-shrink: 0;
+  height: .875rem;
+  width: .875rem;
+}
+
+.book-collection a:focus-visible .book-cover::after {
+  opacity: 1;
+}
+
+.book-collection a:focus-visible .book-cta {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+
+@media (hover: hover) {
+  .book-collection a:hover .book-cover::after {
+    opacity: 1;
+  }
+
+  .book-collection a:hover .book-cta {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
 .read-badge {
   background-color: var(--badge-bg);
   border: 1px solid var(--grey-light);
@@ -298,6 +368,7 @@ a {
   position: absolute;
   right: -.5rem;
   top: -.5rem;
+  z-index: 2;
 }
 
 .arrow {

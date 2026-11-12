@@ -9,23 +9,7 @@ title: Library
 
   <ul class="book-collection list-reset d-flex">
     {% for book in site.data.library limit:4 %}
-    <li class="exposed-link relative">
-      <a class="black text-bold text-plain" href="{{ book.url }}">
-
-        <div class="read-badge br-1 font-secondary grey text-h6 text-normal">
-          {% if book.read %}
-          <span style="color: #afe1af;">&bull;</span> Read
-          {% else %}
-          <span style="color: #e4D00a;">&bull;</span> Reading
-          {% endif %}
-        </div>
-
-        <img alt="{{ book.title }}" class="br-1" src="{{ book.img }}">
-
-        <h4 class="text-h4">{{ book.title }}</h4>
-        <h4 class="grey text-h5 text-normal">{{ book.author }}</h4>
-      </a>
-    </li>
+    {% include book.html %}
     {% endfor %}
   </ul>
 

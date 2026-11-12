@@ -1,0 +1,26 @@
+<li class="exposed-link relative">
+  <a class="black text-bold text-plain" href="{{ book.url }}">
+    <div class="read-badge br-1 font-secondary grey text-h6 text-normal">
+      {% if book.read %}
+      <span style="color: #afe1af;">&bull;</span> Read
+      {% else %}
+      <span style="color: #e4D00a;">&bull;</span> Reading
+      {% endif %}
+    </div>
+
+    <div class="book-cover br-1">
+      <img alt="{{ book.title }}" src="{{ book.img }}">
+      <span class="book-cta br-1 font-secondary text-h6 text-normal">
+        View on Google
+        <svg aria-hidden="true" class="book-cta-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+          <polyline points="15 3 21 3 21 9"/>
+          <line x1="10" y1="14" x2="21" y2="3"/>
+        </svg>
+      </span>
+    </div>
+
+    <h4 class="text-h4">{{ book.title }}</h4>
+    <h4 class="grey text-h5 text-normal">{{ book.author }}</h4>
+  </a>
+</li>
