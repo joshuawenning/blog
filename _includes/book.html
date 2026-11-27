@@ -1,5 +1,5 @@
 <li class="exposed-link relative">
-  <a class="black text-bold text-plain" href="{{ book.url }}">
+  <a class="black text-bold text-plain" href="{{ book.url }}" rel="noopener noreferrer" target="_blank">
     <div class="read-badge br-1 font-secondary grey text-h6 text-normal">
       {% if book.read %}
       <span style="color: #afe1af;">&bull;</span> Read
@@ -9,7 +9,7 @@
     </div>
 
     <div class="book-cover br-1">
-      <img alt="{{ book.title }}" src="{{ book.img }}">
+      <img alt="Cover of {{ book.title }} by {{ book.author }}" src="{{ book.img }}">
       <span class="book-cta br-1 font-secondary text-h6 text-normal">
         View on Google
         <svg aria-hidden="true" class="book-cta-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
