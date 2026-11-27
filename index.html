@@ -114,10 +114,10 @@ title: Home
     </h3>
     <p class="grey mb-1 text-h4 text-italic">Latest Clicks of the Everyday Sacred</p>
 
-    {% assign photos = site.static_files | where_exp: "file", "file.path contains '/assets/images/photos/'" %}
+    {% assign photos = site.static_files | where_exp: "file", "file.path contains '/assets/images/photos/'" | sort: "name" | reverse %}
 
     <div class="d-flex gallery">
-      {% for photo in photos limit:3 %}
+      {% for photo in photos limit:6 %}
       <div class="gallery-img">
         <img alt="" class="d-block br-1 js-thumb" data-full="{{ photo.path | relative_url }}" src="{{ photo.path | relative_url }}">
       </div>
@@ -131,6 +131,7 @@ title: Home
         </svg>
       </div>
       <img alt="" src="" class="lightbox-img br-1" id="lightbox-img">
+      <p class="lightbox-date font-secondary" id="lightbox-date"></p>
     </div>
   </section>
 </div>

@@ -426,6 +426,7 @@ a {
   backdrop-filter: blur(1rem);
   background: rgba(0, 0, 0, .5);
   display: none;
+  flex-direction: column;
   inset: 0;
   justify-content: center;
   position: fixed;
@@ -453,8 +454,19 @@ a {
 // Full-size image
 .lightbox-img {
   animation: fadeIn .125s;
-  max-height: 90vh;
+  max-height: calc(90vh - 2.5rem);
   max-width: 90vw;
+}
+
+.lightbox-date {
+  color: rgba(255, 255, 255, .7);
+  font-size: .75rem;
+  letter-spacing: .04em;
+  margin-top: .75rem;
+
+  &:empty {
+    display: none;
+  }
 }
 
 @keyframes fadeIn {

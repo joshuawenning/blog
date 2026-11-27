@@ -17,7 +17,7 @@ title: Library
 
   <h2 class="text-h2">Photography</h1>
   <h3 class="mb-1 grey text-h4 text-italic text-normal">Latest Clicks of the Everyday Sacred</h3>
-  {% assign photos = site.static_files | where_exp: "file", "file.path contains '/assets/images/photos/'" %}
+  {% assign photos = site.static_files | where_exp: "file", "file.path contains '/assets/images/photos/'" | sort: "name" | reverse %}
 
   <div class="d-flex gallery">
     {% for photo in photos %}
@@ -34,5 +34,6 @@ title: Library
       </svg>
     </div>
     <img alt="" src="" class="lightbox-img br-1" id="lightbox-img">
+    <p class="lightbox-date font-secondary" id="lightbox-date"></p>
   </div>
 </section>
