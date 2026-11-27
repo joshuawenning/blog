@@ -8,7 +8,7 @@ title: Library
   <h2 class="mb-2 grey text-h4 text-italic text-normal">Growing Collection of Inspiring Reads</h2>
 
   <ul class="book-collection list-reset d-flex">
-    {% for book in site.data.library limit:4 %}
+    {% for book in site.data.library %}
     {% include book.html %}
     {% endfor %}
   </ul>

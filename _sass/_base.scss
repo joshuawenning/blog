@@ -264,10 +264,8 @@ a {
 
 .book-collection {
   flex-wrap: wrap;
-  justify-content: space-between;
 
   li {
-    flex-grow: 1;
     margin-bottom: 1rem;
     width: calc(50% - 1.25rem);
 
