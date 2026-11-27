@@ -390,13 +390,17 @@ a {
 }
 
 .status-key {
+  background-color: var(--white);
+  border: 1px solid var(--grey-light);
+  padding: .25rem .5rem;
+  width: fit-content;
+
   > span + span {
     margin-left: 1rem;
   }
 
   .status-mark {
     margin-left: 0;
-    margin-right: .15rem;
     vertical-align: baseline;
   }
 }
