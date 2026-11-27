@@ -1,5 +1,6 @@
 ---
 layout: post
+status: published
 tags: programming
 title: Your Own Speed
 ---

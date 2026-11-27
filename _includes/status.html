@@ -1,0 +1,12 @@
+{%- assign status = include.status | default: 'published' | downcase -%}
+{%- assign match = site.data.statuses | where: "slug", status | first -%}
+{%- unless match -%}
+{%- assign match = site.data.statuses | where: "slug", "published" | first -%}
+{%- endunless -%}
+{%- if include.inline -%}
+<span class="status-label font-secondary text-normal"><span class="status-mark" style="color: {{ match.color }};" aria-hidden="true">&bull;</span> {{ match.name }}</span>
+{%- elsif include.label -%}
+{{- match.name -}}
+{%- else -%}
+<span class="status-mark" role="img" aria-label="{{ match.name }}" title="{{ match.name }}" style="color: {{ match.color }};">&bull;</span>
+{%- endif -%}

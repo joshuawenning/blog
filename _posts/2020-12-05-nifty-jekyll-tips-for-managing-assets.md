@@ -1,5 +1,6 @@
 ---
 layout: post
+status: published
 tags: code
 title: Nifty Jekyll Tips for Managing Assets
 ---

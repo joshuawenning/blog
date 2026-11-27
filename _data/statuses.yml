@@ -1,0 +1,11 @@
+- name: Ideation
+  slug: ideation
+  color: "#b7c4f5"
+
+- name: Draft
+  slug: draft
+  color: "#e4D00a"
+
+- name: Published
+  slug: published
+  color: "#afe1af"

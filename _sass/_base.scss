@@ -369,6 +369,38 @@ a {
   z-index: 2;
 }
 
+.status-mark {
+  font-family: var(--font-family-secondary);
+  font-size: var(--text-h6);
+  font-weight: normal;
+  line-height: 1;
+  margin-left: .35rem;
+  vertical-align: super;
+}
+
+.status-label {
+  letter-spacing: 0;
+  text-transform: none;
+
+  .status-mark {
+    margin-left: 0;
+    margin-right: .15rem;
+    vertical-align: baseline;
+  }
+}
+
+.status-key {
+  > span + span {
+    margin-left: 1rem;
+  }
+
+  .status-mark {
+    margin-left: 0;
+    margin-right: .15rem;
+    vertical-align: baseline;
+  }
+}
+
 .arrow {
   height: 24px;
   margin-left: .5rem;

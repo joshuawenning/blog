@@ -1,5 +1,6 @@
 ---
 layout: post
+status: draft
 tags: programming
 title: The Developer's Dictionary
 ---
